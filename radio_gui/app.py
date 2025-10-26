@@ -13,6 +13,13 @@ from tkinter import ttk
 from tkinter.scrolledtext import ScrolledText
 from typing import Dict, Optional
 
+import sys
+import os
+
+SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+sys.path.append(os.path.dirname(SCRIPT_DIR))
+
+
 import numpy as np
 
 try:
